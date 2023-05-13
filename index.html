@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>GitHub Explorer</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1 id="headingmain">GitHub Explorer</h1>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#my-profile">My Profile</a></li>
+                    <li><a href="#search-profile">Search A Profile</a></li>
+                </ul>
+            </nav>
+            <div class="my-profile" id="my-profile">
+                <h1>My Profile</h1>
+                <div class="container">
+                    <div class="left">
+                        <img src="images/87000253.png" id="image">
+                        <h3 id="username">C.Vishwanath</h3>
+                    </div>
+                    <div class="right">
+                        <label for="name">Name:</label>
+                        <span id="name">Vishwanath</span>
+                        <br>
+                        <label for="followers">Followers:</label>
+                        <span id="followers">5</span>
+                        <br>
+                        <label for="following">Following:</label>
+                        <span id="following">10</span>
+                        <br>
+                        <label for="public_repos">Repositories:</label>
+                        <span id="public_repos">16</span>
+                        <br>
+                        <a href="" id="viewmoreatag" target="_blank"><button id="viewmore">View In Github</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-profile" id="search-profile">
+            <h1>Search For A Profile</h1>
+            <div class="form">
+                <input type="text" placeholder="Search a username" id="inputsearch">
+                <button id="searchbutton">Search</button>
+            </div>
+
+            <div class="containersearch">
+                <div class="leftsearch">
+                    <img src="" id="imagesearch">
+                    <h3 id="usernamesearch"></h3>
+                </div>
+                <div class="rightsearch">
+                    <label for="name">Name:</label>
+                    <span id="namesearch"></span>
+                    <br>
+                    <label for="followers">Followers:</label>
+                    <span id="followerssearch"></span>
+                    <br>
+                    <label for="following">Following:</label>
+                    <span id="followingsearch"></span>
+                    <br>
+                    <label for="public_repos">Repositories:</label>
+                    <span id="public_repossearch"></span>
+                    <br>
+                    <a href="" id="viewmoreatag" target="_blank"><button id="viewmoresearch">View In Github</button></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
